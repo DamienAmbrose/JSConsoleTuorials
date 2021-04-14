@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Variables | JS Console</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<script src="https://kit.fontawesome.com/fdc41ad447.js" crossorigin="anonymous"></script>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+html{scroll-behavior: smooth;}
+
+</style>
+<body>
+
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background: rgba(5,38,76,255);" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px"><button style="height: 100%;width:100%;background-color: rgba(255, 255, 255, 0);border-color: rgba(255, 255, 255, 0);cursor: pointer;color: white;" id= "closebutton">Close Menu</button></a>
+  <br><br>
+  <div class="w3-bar-block" style="color: rgba(255, 255, 255, 0.849);">
+    <a onclick="w3_close()" class="w3-bar-item w3-xlarge w3-button w3-hover-white" href="index.html">Back</a>
+    <a href="#declaring" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-hover-white">Declaring Variables</a> 
+    <a href="#console." onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Console logs</a> 
+  </div>
+</nav>
+
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color: rgba(5,38,76,255);color:white;">
+  <a href="javascript:void(0)" class="w3-button 3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>JS Console</span>
+</header>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="Close" id="myOverlay"></div>
+
+
+
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+ 
+
+  <div class="w3-container" id="declaring" style="margin-top:75px">
+    <h1 class="w3-xxlarge" style="color:rgba(5,38,76,255);"><b>Declaring Variables.</b></h1>
+    <hr style="width:50px;border:5px solid rgba(5,38,76,255)" class="w3-round">
+    <p>Variables are represented by letters or special characters that can have their values changed later in code.</p>
+    <p>Declaring variables is easy. All you need to do is type "var" followed by what you want to name the variable. I'll pick "foo". Then type " = " and then a string or number. Close it with ";". You should have something like this: <kbd>"var foo = "Hello World";"</kbd>. To change the value of a variable, type the variables name("foo" in my case) followed by " = " and the variables new value. Eg: <kbd>foo = "World Hello"; </kbd>. You can use our <a href="mathtutorial.html">Math tutorials</a> or <a href="stringtutorial.html">String Tutorials</a> for more information.</p> 
+    </p>
+  </div>
+  
+  <div class="w3-container" id="console." style="margin-top:75px">
+    <h1 class="w3-xxlarge" style="color:rgba(5,38,76,255);"><b>Console logs.</b></h1>
+    <hr style="width:50px;border:5px solid rgba(5,38,76,255)" class="w3-round">
+    <p>This is how to get logs from the console:</p>
+  </div>
+
+
+ 
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="Console2.png" alt="Console" style="width:100%">
+        <div class="w3-container">
+          <h3>Open Console</h3>
+          <p>Open the console as you would do normaly by going to <kbd>Dev Tools> Console</kbd>. If you are still not sure how to do so, go <a href= "index.html#setup">here.</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="Console4.png" alt="Variable" style="width:100%">
+        <div class="w3-container">
+          <h3>Create a variable</h3>
+          <p>Create a variable and give it a value. If you are not sure how, go <a href="#declaring">here. </a>If you want to learn about the variables types, go <a href="index.html#tutorials">here.</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="Console3.png" alt="Logs" style="width:100%">
+        <div class="w3-container">
+          <h3>Run logs</h3>
+          <p>Type "console.log();" with your variable's name inside the brackets. "console.info()" is used to achieve the same result. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+ 
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+console.clear();
+console.log("Great Job! You opened the console!");
+console.log("Now, use the content on the page to learn how to use the console for JavaScript");
+</script>
+
+</body>
+</html>

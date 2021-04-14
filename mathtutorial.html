@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Maths | JS Console</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<script src="https://kit.fontawesome.com/fdc41ad447.js" crossorigin="anonymous"></script>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+html{scroll-behavior: smooth;}
+
+</style>
+<body>
+
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background: rgba(5,38,76,255);" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px"><button style="height: 100%;width:100%;background-color: rgba(255, 255, 255, 0);border-color: rgba(255, 255, 255, 0);cursor: pointer;color: white;" id= "closebutton">Close Menu</button></a>
+  <br><br>
+  <div class="w3-bar-block" style="color: rgba(255, 255, 255, 0.849);">
+    <a onclick="w3_close()" class="w3-bar-item w3-xlarge w3-button w3-hover-white" href="index.html">Back</a>
+    <a href="#quickmaths" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-hover-white">Quick Maths</a> 
+    <a href="#.math" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">.Math functions</a> 
+  </div>
+</nav>
+
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color: rgba(5,38,76,255);color:white;">
+  <a href="javascript:void(0)" class="w3-button 3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>JS Console</span>
+</header>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="Close" id="myOverlay"></div>
+
+
+
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+ 
+  <div class="w3-container" id="quickmaths" style="margin-top:75px">
+    <h1 class="w3-xxlarge" style="color:rgba(5,38,76,255);"><b>Quick Maths.</b></h1>
+    <hr style="width:50px;border:5px solid rgba(5,38,76,255)" class="w3-round">
+    <p>The console is capable of doing maths on the fly using the <kbd>+</kbd>, <kbd>-</kbd>, <kbd>*</kbd>, and <kbd>/</kbd> functions.</p>
+    <p>Such functions can help in on the fly calculations just like a normal calculator. Despite this, this technique is outdated and is not useful for debugging anyways. To actually debug, you need to know what <a href="#.math">.Math functions</a> are. .Math Functions can be use to set variables and deal with complex numerical operations such as raising powers or finding minimums and maximums from a set of numbers. Eg: 10+5; 10/2;
+    </p>
+  </div>
+  
+  <div class="w3-container" id=".math" style="margin-top:75px">
+    <h1 class="w3-xxlarge" style="color:rgba(5,38,76,255);"><b>Math. Functions.</b></h1>
+    <hr style="width:50px;border:5px solid rgba(5,38,76,255)" class="w3-round">
+    <p>Here are some Math. functions:</p>
+  </div>
+
+
+ 
+
+      
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <h1 style="font-size: 200px;width:100%;text-align: center;background-color: rgb(248, 248, 248);"><i class="fa fa-superscript"></i></h1>
+          <div class="w3-container">
+            <h3>Powers</h3>
+            <p>Math.pow(X, Y) will raise a X  to the power of Y. Eg: var foo = Math.pow(2, 2);<br>console.log(foo);<kbd> 4</kbd></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <h1 style="font-size: 200px;width:100%;text-align: center;background-color: rgb(248, 248, 248);"><i class="fa fa-square-root-alt"></i></h1>
+          <div class="w3-container">
+            <h3>Square Root</h3>
+            <p>Math.sqrt(X) will give you the square root of the given value X. Eg: var foo = Math.sqrt(4);<br>console.log(foo);<kbd> 2</kbd></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <h1 style="font-size: 200px;width:100%;text-align: center;background-color: rgb(248, 248, 248);"><i class="fa fa-not-equal"></i></h1>
+          <div class="w3-container">
+            <h3>Min/Max</h3>
+            <p>Math.min/max(X, Y, Z) will give you minimum or maximum of a range. Eg: var foo = Math.min(2, 3, 4);<br>console.log(foo);<kbd> 2</kbd></p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+ 
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+console.clear();
+console.log("Great Job! You opened the console!");
+console.log("Now you can start calculating");
+</script>
+
+</body>
+</html>

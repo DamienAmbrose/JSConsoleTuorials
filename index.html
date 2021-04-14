@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Home | JS Console</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link href="netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+html{scroll-behavior: smooth;}
+a {text-decoration: none;}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background: rgba(5,38,76,255);" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px"><button style="height: 100%;width:100%;background-color: rgba(255, 255, 255, 0);border-color: rgba(255, 255, 255, 0);cursor: pointer;color:white;" id= "closebutton">Close Menu</button></a>
+  <br><br>
+  <div class="w3-bar-block" style="color: rgba(255, 255, 255, 0.849);">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-xlarge w3-button w3-hover-white">JavaScript Console</a>
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#setup" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SetUp</a> 
+    <a href="#tutorials" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tutorials</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color: rgba(5,38,76,255);color:white;">
+  <a href="javascript:void(0)" class="w3-button 3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>JS Console</span>
+</header>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="Close" id="myOverlay"></div>
+
+
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+ 
+
+  <div class="w3-container" id="home" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color:rgba(5,38,76,255);"><b>JavaScript Console.</b></h1>
+    <hr style="width:50px;border:5px solid rgba(5,38,76,255)" class="w3-round">
+    <p>The <b>JavaScript Console</b> is a tool for debugging code, handling variables, or just having fun!</p>
+    <p>The JavaScript console is a command line interface in your browser that can execute snippets of code. When that code snippet is designed to interact with the webpage you are currently on, result can happen that might not have been possible otherwise. The Console can be used to log information as part of the JavaScript development process, as well as allow you to interact with a web page by carrying out JavaScript expressions within the page's context. Essentially, the Console provides you with the ability to write, manage, and monitor JavaScript on demand.
+    </p>
+  </div>
+  
+
+  <div class="w3-container" id="setup" style="margin-top:75px">
+    <h1 class="w3-xxlarge" style="color:rgba(5,38,76,255);"><b>SetUp.</b></h1>
+    <hr style="width:50px;border:5px solid rgba(5,38,76,255)" class="w3-round">
+    <p>Here are the steps to SetUp your Console:</p>
+  </div>
+
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="Console1.png" alt="Dev Tools" style="width:100%">
+        <div class="w3-container">
+          <h3>Open Dev Tools</h3>
+          <p>Open dev tools by using <kbd>More tools> Dev tools</kbd> or Option + ⌘ + J (on macOS), or Shift + CTRL + J (on Windows/Linux).</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="Console2.png" alt="Console" style="width:100%">
+        <div class="w3-container">
+          <h3>Console</h3>
+          <p>Select <kbd>Console</kbd> from the tab navigator at the top of the panel. You can also use the <kbd>console</kbd> under the elements tab.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="Console3.png" alt="Code" style="width:100%">
+        <div class="w3-container">
+          <h3>Code</h3>
+          <p>Now you can start debugging, calculating, data handeling, joining, case changes, and so much more with this!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container" id="tutorials" style="margin-top:75px">
+    <h1 class="w3-xxlarge" style="color: rgba(5,38,76,255);"><b>Tutorials.</b></h1>
+    <hr style="width:50px;border:5px solid rgba(5,38,76,255)" class="w3-round">
+    <p>Now that the console is open, here are some tutorials for you!</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <a href="vartutorial.html"><li class="w3-dark-grey w3-xlarge w3-padding-32">Variables</li></a>
+        <li class="w3-padding-16">Declaring Variables</li>
+        <li class="w3-padding-16">Console Logs</li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <a href="mathtutorial.html"><li class="w3-dark-grey w3-xlarge w3-padding-32">Maths</li></a>
+        <li class="w3-padding-16">Quick Maths</li>
+        <li class="w3-padding-16">Math. functions</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <a href= "stringtutorial.html"><li class= "w3-dark-grey w3-xlarge w3-padding-32">Strings</li></a>
+        <li class="w3-padding-16">Joining variable cases</li>
+        <li class="w3-padding-16">Length and replace</li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <a href= "https://www.w3schools.com/jsref/obj_console.asp" target="_blank"><li class="w3-dark-grey w3-xlarge w3-padding-32">Console</li></a>
+        <li class="w3-padding-16">Basic Prints</li>
+        <li class="w3-padding-16">Console. Functions</li>
+      </ul>
+    </div>
+  </div>
+
+
+ 
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+console.clear();
+console.log("Great Job! You opened the console!");
+console.log("Now use the tutorials to learn what to do with it");
+</script>
+
+</body>
+</html>

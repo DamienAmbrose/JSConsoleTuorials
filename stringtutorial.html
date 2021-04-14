@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Strings | JS Console</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<script src="https://kit.fontawesome.com/fdc41ad447.js" crossorigin="anonymous"></script>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+html{scroll-behavior: smooth;}
+
+</style>
+<body>
+
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background: rgba(5,38,76,255);" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px"><button style="height: 100%;width:100%;background-color: rgba(255, 255, 255, 0);border-color: rgba(255, 255, 255, 0);cursor: pointer;color: white;" id= "closebutton">Close Menu</button></a>
+  <br><br>
+  <div class="w3-bar-block" style="color: rgba(255, 255, 255, 0.849);">
+    <a onclick="w3_close()" class="w3-bar-item w3-xlarge w3-button w3-hover-white" href="index.html">Back</a>
+    <a href="#declaring" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-hover-white">Joining variable cases</a> 
+    <a href="#console." onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Length and replace</a> 
+  </div>
+</nav>
+
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color: rgba(5,38,76,255);color:white;">
+  <a href="javascript:void(0)" class="w3-button 3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>JS Console</span>
+</header>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="Close" id="myOverlay"></div>
+
+
+
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+ 
+
+  <div class="w3-container" id="declaring" style="margin-top:75px">
+    <h1 class="w3-xxlarge" style="color:rgba(5,38,76,255);"><b>Joining variable cases.</b></h1>
+    <hr style="width:50px;border:5px solid rgba(5,38,76,255)" class="w3-round">
+    <p>Using the "var foo = "Hello World" + "World Hello";" is so 2017! The concat() method is the new way to go! </p>
+    <p>Concat() has been around for a while but people still don't use it. The concat() method joins 2 or more strings to a pre-existing one. Eg: foo.concat("Hello", foo, 5);. Changing cases is also easier because of the .case functions. Eg: foo.toUpperCase(); HELLO WORLD </p> 
+    </p>
+  </div>
+  
+  <div class="w3-container" id="console." style="margin-top:75px">
+    <h1 class="w3-xxlarge" style="color:rgba(5,38,76,255);"><b>Length & Replace.</b></h1>
+    <hr style="width:50px;border:5px solid rgba(5,38,76,255)" class="w3-round">
+    <p>This is how to find string lengths and replace them:</p>
+  </div>
+
+
+      
+  <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-light-grey">
+      <h1 style="font-size: 200px;width:100%;text-align: center;background-color: rgb(248, 248, 248);"><i class="fa fa-ruler"></i></h1>
+      <div class="w3-container">
+        <h3>Length</h3>
+        <p>.length will give you the length of the variable before .length() function is called. Note: The .length() functions will only give you the word count. Eg: foo.length; 2 </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-light-grey">
+      <h1 style="font-size: 200px;width:100%;text-align: center;background-color: rgb(248, 248, 248);"><i class="fa fa-exchange-alt"></i></h1>
+      <div class="w3-container">
+        <h3>Replace</h3>
+        <p>.replace("", "") will replace the value of the first double quote to the second double quote. Eg: foo.replace("World", "Hello"); Hello Hello </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-light-grey">
+      <h1 style="font-size: 200px;width:100%;text-align: center;background-color: rgb(248, 248, 248);"><i class="fa fa-quote-right"></i></h1>
+      <div class="w3-container">
+        <h3>Quotes</h3>
+        <p>Always use quotes when defining strings. Though "100" may be accepted as a string, Hello World(without the quotes) is, however, not. </p>
+      </div>
+    </div>
+  </div>
+
+
+
+ 
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+console.clear();
+console.log("Great Job! You opened the console!");
+console.log("Now you can use the variables for strings");
+</script>
+
+</body>
+</html>
